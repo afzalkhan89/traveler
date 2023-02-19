@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <div class="container-fluid py-3 " id="home">
+    <div class="container-fluid py-3" id="home">
       <div class="row m-0 p-0">
         <div class="col-lg-6 col-7 pss-4">
           <p class="gmail-number">
@@ -61,29 +61,33 @@
       <header
         class="d-flex flex-wrap justify-content-center h-shedow align-items-center"
       >
-        <a
-          href="/"
-          class="d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none"
-        >
-          <h2 class="display-6 fw-bold">TRAVEL<span>ER</span></h2>
-        </a>
-        <ul class="nav pe-3">
-          <li class="nav-item a-item">
-            <a href="#home" class="nav-link active" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item a-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item a-item">
-            <a href="#service" class="nav-link">Service</a>
-          </li>
-          <li class="nav-item a-item">
-            <a href="#packages" class="nav-link">Tour Packages</a>
-          </li>
-          <li class="nav-item a-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
+        <div class="nav align-items-center">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none"
+          >
+            <h2 class="display-6 fw-bold">TRAVEL<span>ER</span></h2>
+          </a>
+          <ul class="d-flex pe-3 mb-0">
+            <li class="nav-item a-item">
+              <a href="#home" class="nav-link active" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item a-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item a-item">
+              <a href="#service" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item a-item">
+              <a href="#packages" class="nav-link">Tour Packages</a>
+            </li>
+            <li class="nav-item a-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </header>
     </div>
     <div class="contanior-fluid p-0 img position-relative">
@@ -983,7 +987,15 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+
     <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $(".nav").addClass("sticky");
+        } else {
+          $(".nav").removeClass("sticky");
+        }
+      });
       jQuery(document).ready(function ($) {
         "use strict";
         //  TESTIMONIALS CAROUSEL HOOK
