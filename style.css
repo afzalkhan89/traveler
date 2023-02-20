@@ -74,6 +74,9 @@ header {
   margin-top: -85px;
   padding: 30px;
 }
+ul{
+  list-style-type: none;
+}
 .nav{
   background: #fff;
   color: #FFF;
@@ -558,7 +561,7 @@ h1 span {
   .a-item a {
     font-weight: 600;
     color: black;
-    padding: 6px 9px;
+    padding: 6px 12px;
     font-size: 14px;
   }
   .center-div {
@@ -777,7 +780,11 @@ h1 span {
     left: 58px;
   }
   .h-shedow h2 {
-    padding-left: 0px;
+    padding-left: 1rem;
+    /* font-size: 22px; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* margin: auto; */
   }
   .center-div {
     left: 16%;
@@ -1050,7 +1057,7 @@ h1 span {
     top: 45px;
   }
   .h-shedow h2 {
-    padding-left: 0px;
+    padding-left: 1rem;
   }
   .gmail-number {
     margin-bottom: 0.5rem;
@@ -1059,6 +1066,12 @@ h1 span {
   .gmail-number span {
     padding: 0 0.5rem;
   }
+  .a-item a {
+    font-weight: 600;
+    color: black;
+    padding: 5px 8px;
+    font-size: 13px;
+}
   .center-div {
     left: 20%;
   }
@@ -1346,7 +1359,11 @@ h1 span {
     font-weight: 600;
     color: black;
     padding: 4px 6px;
-    font-size: 11px;
+    font-size: 10px;
+  }
+  ul{
+    padding-left: 1rem !important;
+    list-style-type: none;
   }
   .center-div {
     left: 15%;
